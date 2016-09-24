@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Where Am I Next?</string>
+    <string name="tablename">WhereAmINextTable</string>
+
+    <!--for the main view-->
+    <string name="nextup">Next, you have</string>
+    <string name="noentries">Please add some entries into the list!</string>
+    <string name="newentrystring">Add entries</string>
+
+    <!--new entry floating dialog-->
+    <string name="namelbl">Name:</string>
+    <string name="locationlbl">Location:</string>
+    <string name="daylbl">Day:</string>
+    <string name="timelbl">Time:</string>
+    <string name="noname">Please enter a name!</string>
+    <string name="noloc">Please enter a location!</string>
+    <string name="notime">Please set the time!</string>
+
+    <!--About dialog string-->
+    <string name="abouttext1">
+        A simple app for students to see where/when they are next. Released under the MIT licence.
+        It\'s my first Android app, sorry if it sucks.</string>
+    <string name="abouttext2">
+    App icon created by Natalya Skidan (https://www.iconfinder.com/MilanaTT) and released under the Creative Commons 2.5 licence.
+        Other icons are from the material design icon pack provided by Google under the Apache licence V2.</string>
+
+    <!--menu options-->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="enablenotification">Enable Notification</string>
+    <string name="cleartimetable">Clear Timetable</string>
+    <string name="about">About</string>
+</resources>

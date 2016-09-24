@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context="errorc2146.whereaminext.MainActivity">
+
+    <ImageButton
+        android:id = "@+id/switchtolist"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/ic_list_white_18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/noentrytext"
+        android:text="@string/noentries"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/detaillayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="84dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id = "@+id/first"
+            android:text = "@string/nextup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id = "@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textSize="64sp"
+            android:layout_below="@+id/first"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id = "@+id/second"
+            android:text = "at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/nametext"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id = "@+id/locationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/second"
+            android:textSize="52sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id = "@+id/third"
+            android:text = "on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/locationtext"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <TextView
+            android:id = "@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/third"
+            android:textSize="52sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

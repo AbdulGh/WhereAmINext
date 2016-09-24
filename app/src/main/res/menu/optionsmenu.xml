@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="?attr/actionBarSize">
+
+    <item
+        android:id="@+id/newentry"
+        android:icon="@drawable/ic_add_white_18dp"
+        android:title="@string/newentrystring"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/notificationcheck"
+        android:title="@string/enablenotification"
+        android:checkable="true"
+        app:showAsAction="never|withText"/>
+
+    <item android:id="@+id/cleartable"
+        android:title="@string/cleartimetable"
+        app:showAsAction="never|withText"/>
+
+    <item android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never|withText"/>
+
+</menu>
