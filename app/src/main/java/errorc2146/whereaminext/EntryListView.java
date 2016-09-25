@@ -84,7 +84,6 @@ public class EntryListView extends AppCompatActivity implements NewEntryDialog.N
     {
         super.onCreateContextMenu(menu, v, menuInfo);
 
-        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         MenuInflater inf = getMenuInflater();
         inf.inflate(R.menu.listpopupmenu, menu);
     }

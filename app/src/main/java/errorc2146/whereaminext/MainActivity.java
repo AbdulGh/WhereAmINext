@@ -55,12 +55,12 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(getApplicationContext(), "IOException whilst loading!", Toast.LENGTH_LONG).show();
         }
 
-        name = (TextView)findViewById(R.id.nametext);
-        location = (TextView)findViewById(R.id.locationtext);
-        time = (TextView)findViewById(R.id.timetext);
+        detailLayout=(RelativeLayout)findViewById(R.id.detaillayout);
+        name = (TextView)detailLayout.findViewById(R.id.nametext);
+        location = (TextView)detailLayout.findViewById(R.id.locationtext);
+        time = (TextView)detailLayout.findViewById(R.id.timetext);
 
         noEntryText=(TextView)findViewById(R.id.noentrytext);
-        detailLayout=(RelativeLayout) findViewById(R.id.detaillayout);
 
         ImageButton button = (ImageButton)findViewById(R.id.switchtolist);
         button.setOnClickListener(new View.OnClickListener()
