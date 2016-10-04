@@ -21,13 +21,11 @@ public class AlarmReceiver extends BroadcastReceiver
         {
             fireNotification(context);
             TimetableEntry te = Timetable.getNextEntry();
-
-            //get next timetable entry and set alarm
-            int nextmins = te.getTime().getTime() - new WeekTime().getTime();
+            ;
             Intent nexti = new Intent(context, AlarmReceiver.class);
             PendingIntent pIntent = PendingIntent.getBroadcast(context, 1, nexti, PendingIntent.FLAG_UPDATE_CURRENT);
             AlarmManager alarm = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-            alarm.set(AlarmManager.RTC, System.currentTimeMillis() + nextmins * 60000, pIntent);
+            alarm.setInexactRepeating(AlarmManager.RTC, System.currentTimeMillis(), AlarmManager.INTERVAL_FIFTEEN_MINUTES, pIntent);
 
         }
     }
